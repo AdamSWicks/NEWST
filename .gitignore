@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.openai/
+node_modules/
+source-assets/
+releases/
+*-NOTES.md
+*.tar.gz
+*.docx
+*.xlsx

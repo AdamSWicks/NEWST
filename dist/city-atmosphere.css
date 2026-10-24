@@ -1,0 +1,57 @@
+/* Images form the section canvas; copy sits within their light and shadow. */
+.accountability,.craft,.city-standard{position:relative;isolation:isolate;overflow:hidden}
+.accountability{display:block;background:var(--ink);color:var(--paper);min-height:980px;padding-top:130px;padding-bottom:130px}
+.accountability .doorway{position:absolute;inset:0 0 0 23%;max-width:none;z-index:-2}
+.accountability .doorway img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:65% 53%}
+.accountability:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0c0d0e 0%,#0c0d0ef5 27%,#0c0d0ed9 43%,#0c0d0e38 72%,#0c0d0e0d),linear-gradient(0deg,#0c0d0e,transparent 23%,transparent 80%,#0c0d0e)}
+.accountability-copy{position:relative;max-width:590px;width:53%}
+.accountability-copy>p:not(.eyebrow){color:#c5cbc3}
+.accountability-copy .standfirst{color:var(--paper)!important}
+.accountability cite{color:#aeb7aa}
+.accountability blockquote{border-color:#b79b7d}
+.city-bridge{border-top:0}
+.craft{background:var(--ink);min-height:1080px;padding-top:110px;padding-bottom:100px;display:flex;flex-direction:column;justify-content:space-between}
+.craft .craft-image{position:absolute;inset:0;z-index:-2}
+.craft .craft-image img{width:100%;height:100%;max-height:none;object-fit:cover;object-position:55% 52%}
+.craft:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#0c0d0e 0%,#0c0d0ee8 15%,#0c0d0e38 39%,#0c0d0e26 51%,#0c0d0ec9 73%,#0c0d0e 100%)}
+.craft-top{position:relative;margin:0;align-items:start}
+.craft-top>p{color:#c5cbc3;margin-top:44px}
+.craft-bottom{position:relative;margin-top:440px}
+.craft-bottom p{color:#c5cbc3}
+.city-standard{display:block;min-height:900px;padding-top:130px;padding-bottom:130px}
+.city-standard>.editorial-figure{position:absolute;inset:0 35% 0 0;max-width:none;z-index:-2}
+.city-standard>.editorial-figure img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.city-standard:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#e9e8e405 0%,#e9e8e414 25%,#e9e8e4e8 49%,#e9e8e4 65%),linear-gradient(0deg,#e9e8e4,transparent 24%,transparent 79%,#e9e8e4)}
+.city-standard>div{position:relative;width:48%;margin-left:52%}
+@media(max-width:1000px){
+  .accountability{min-height:1030px;padding-top:100px;padding-bottom:100px}
+  .accountability-copy{width:65%;max-width:570px}
+  .accountability .doorway{inset:0 0 0 15%}
+  .accountability:before{background:linear-gradient(90deg,#0c0d0efc 0%,#0c0d0ee8 30%,#0c0d0eb8 53%,#0c0d0e26 100%),linear-gradient(0deg,#0c0d0e,transparent 20%,transparent 80%,#0c0d0e)}
+  .craft{min-height:1150px;padding-top:85px;padding-bottom:85px}
+  .craft-top{display:block;max-width:620px}
+  .craft-top>p{margin:28px 0 0}
+  .craft-bottom{margin-top:390px;gap:24px}
+  .city-standard{padding-top:100px;padding-bottom:100px}
+  .city-standard>div{width:52%;margin-left:48%}
+  .city-standard:before{background:linear-gradient(90deg,#e9e8e40d 0%,#e9e8e499 33%,#e9e8e4f5 49%,#e9e8e4 68%),linear-gradient(0deg,#e9e8e4,transparent 25%,transparent 80%,#e9e8e4)}
+}
+@media(max-width:650px){
+  .accountability{min-height:0;padding-top:75px;padding-bottom:90px}
+  .accountability-copy{width:100%}
+  .accountability .doorway{inset:0 -35% 0 0;opacity:.8}
+  .accountability .doorway img{object-position:64% center}
+  .accountability:before{background:linear-gradient(90deg,#0c0d0ef2,#0c0d0e9e),linear-gradient(0deg,#0c0d0e,transparent 25%,transparent 80%,#0c0d0e)}
+  .accountability h2{font-size:clamp(42px,10vw,60px)}
+  .craft{min-height:0;padding-top:70px;padding-bottom:75px}
+  .craft .craft-image{inset:150px -45% 160px -35%}
+  .craft .craft-image img{object-position:50% center}
+  .craft:before{background:linear-gradient(180deg,#0c0d0e 0%,#0c0d0ef5 20%,#0c0d0e52 42%,#0c0d0e66 56%,#0c0d0ef2 76%,#0c0d0e 100%)}
+  .craft-top>p{color:#c5cbc3}
+  .craft-bottom{margin-top:360px;gap:24px}
+  .city-standard{min-height:0;padding-top:470px;padding-bottom:70px}
+  .city-standard>.editorial-figure{inset:0 0 auto;height:650px}
+  .city-standard>.editorial-figure img{object-position:center 20%}
+  .city-standard:before{background:linear-gradient(180deg,transparent 0%,#e9e8e414 22%,#e9e8e4d9 39%,#e9e8e4 52%,#e9e8e4)}
+  .city-standard>div{width:100%;margin-left:0}
+}

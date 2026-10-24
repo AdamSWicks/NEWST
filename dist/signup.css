@@ -1,0 +1,14 @@
+.hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.outline{border:1px solid #e9e8e4b3;color:var(--paper);background:transparent;padding:18px 23px}
+.outline:hover{background:#e9e8e415;border-color:var(--paper)}
+.signup-section{background:#101115;color:var(--paper)}
+.signup-section>p:not(.eyebrow){color:#b9bcb8}
+.signup-embed{max-width:780px;margin:36px auto 0;min-height:210px}
+.signup-embed>div{max-width:100%}
+.signup-embed form{max-width:100%!important}
+.signup-embed input[type=email]{color:#101115!important;background:#e9e8e4!important;border-radius:0!important}
+.signup-embed input[type=email]::placeholder{color:#616661!important}
+#signup-status{font-size:13px;line-height:1.7;color:#b9bcb8}
+.signup-section .signup-consent{max-width:530px;margin:25px auto 0!important;font-size:12px!important;line-height:1.8!important}
+.signup-section .signup-confirmation{font-size:12px!important;margin-top:14px!important;color:#939994!important}
+@media(max-width:560px){.hero-actions{align-items:stretch;flex-direction:column;max-width:330px;gap:12px}.hero-actions .button{width:100%}.signup-embed{margin-top:25px}.signup-section .signup-consent{max-width:100%}}
