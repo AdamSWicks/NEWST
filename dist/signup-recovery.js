@@ -23,7 +23,7 @@
   function hide() { panel.hidden = true; }
   function input() { return embed.querySelector('input[type="email"]'); }
   function success() { return !input() && /ONE MORE STEP/i.test(embed.textContent); }
-  function offline() { show('You’re offline. Reconnect, then choose Retry signup. Your email will be kept; nothing will be submitted automatically.'); }
+  function offline() { show('You\u2019re offline. Reconnect, then choose Retry signup. Your email will be kept; nothing will be submitted automatically.'); }
   function remember() { const field = input(); if (field) lastEmail = field.value; }
   function guard(event) {
     const target = event.target;
@@ -38,7 +38,7 @@
     clearTimeout(submitTimer);
     submitTimer = setTimeout(() => {
       if (success()) return;
-      show('We haven’t been able to confirm your signup. Check your inbox first. If no confirmation arrived, choose Retry signup. Your email will be kept.');
+      show('We haven\u2019t been able to confirm your signup. Check your inbox first. If no confirmation arrived, choose Retry signup. Your email will be kept.');
     }, 15000);
   }
   // Window capture runs before the embed's own handlers, including React delegation.
@@ -76,7 +76,7 @@
   });
   window.addEventListener('offline', () => { remember(); if (!success()) offline(); });
   window.addEventListener('online', () => {
-    if (!panel.hidden) show('You’re back online. Choose Retry signup to reload the form with your email.');
+    if (!panel.hidden) show('You\u2019re back online. Choose Retry signup to reload the form with your email.');
   });
   // Preview forms load lazily; start the timeout only when signup is approached.
   if ('IntersectionObserver' in window) {
