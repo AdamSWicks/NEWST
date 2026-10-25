@@ -19,3 +19,6 @@
   .hero h1{font-size:clamp(48px,15vw,58px)}
   .hero-actions .button{gap:20px}
 }
+
+/* Vector arrows inherit each link colour without platform emoji substitution. */
+.ui-arrow{display:inline-block;flex-shrink:0;vertical-align:middle;color:inherit}
